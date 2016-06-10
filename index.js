@@ -14,4 +14,7 @@ server.get('/contact', function(request, response){
     response.sendFile('public/html/contact.html', {root: __dirname});
 });
 
-server.listen(8080);
+
+server.listen(8080, function(){
+  console.log('Now listening for requests');
+});
